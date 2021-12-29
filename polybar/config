@@ -428,10 +428,11 @@ font-0 = "SF Mono:weight=semibold:size=10;1"
 font-1 = "FontAwesome:size=10;1"
 font-2 = "SF Mono:weight=semibold:size=10;1"
 font-3 = "Noto Sans Mono:size=10;0"
+font-4 = "Weather Icons:antialias=true:size=10;2"
 
-modules-left = bspwm  
-modules-center = weather date
-modules-right = xkeyboard pavolume memory2 cpu2
+modules-left = bspwm spotify1
+modules-center = openweathermap-simple date
+modules-right = xkeyboard pavolume cpu2 memory2 arch-updates
 
 tray-detached = false
 tray-offset-x = 0
@@ -445,6 +446,7 @@ tray-position = right
 scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
+locale = ru_RU.UTF-8
 
 ################################################################################
 ################################################################################
@@ -1509,8 +1511,8 @@ pin-workspaces = true
 
 ws-icon-0 = 1;[WEB]
 ws-icon-1 = 2;[DEV]
-ws-icon-2 = 3;[MES]
-ws-icon-3 = 4;[MUS]
+ws-icon-2 = 3;[CHAT]
+ws-icon-3 = 4;[MEDIA]
 ws-icon-4 = 5;[VID]
 ws-icon-5 = 6;VI
 ws-icon-6 = 7;VII
@@ -1524,9 +1526,9 @@ format = <label-state> <label-mode>
 
 label-focused = %icon%
 label-focused-background = ${colors.background}
-label-focused-underline= #6790eb
+label-focused-underline= #67eb6a
 label-focused-padding = 1
-label-focused-foreground = #6790EB
+label-focused-foreground = #67eb6a
 
 label-occupied = %icon%
 label-occupied-padding = 1
@@ -1576,12 +1578,13 @@ format-background = ${colors.background}
 type = custom/script
 exec = ~/.config/polybar/scripts/check-arch-updates.sh
 interval = 1000
-label = Arch: %output%
+label = UPD: %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #FFBB00
+;format-prefix = "  "
+;format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
+click-left = alacritty -e sudo pacman -Syyu
 
 [module/aur-updates]
 type = custom/script
@@ -1778,16 +1781,16 @@ type = internal/date
 interval = 5
 ; See "http://en.cppreference.com/w/cpp/io/manip/put_time" for details on how to format the date string
 ; NOTE: if you want to use syntax tags here you need to use %%{...}
-date-alt = " %d.%m.%Y%"
-date = " %A, %d"
+date-alt = "%d.%m.%Y%"
+date = "%d %b, %a"
 time = %H:%M
 time-alt = %H:%M
-format-prefix = " "
+; format-prefix = " "
 format-prefix-foreground = #c1941a
 format-underline = #c1941a
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-label = %date%   %time%
+label = %date% %time%
 
 #################################################################
 
@@ -2083,6 +2086,19 @@ format-connected-background = ${colors.background}
 
 ################################################################################
 
+[module/openweathermap-simple]
+type = custom/script
+exec = ~/.config/polybar/scripts/openweathermap-simple.sh
+interval = 600
+label-font = 5
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+format-underline = #0084FF
+click-left = firefox "https://www.gismeteo.ru/weather-sochi-5233/"
+click-right = firefox "https://yandex.ru/pogoda/239"
+
+################################################################################
+
 [module/pacman-updates]
 type = custom/script
 ;exec = pacman -Qu | wc -l
@@ -2182,6 +2198,8 @@ format-underline = #0f0
 format-prefix = "  "
 format-prefix-foreground = #0f0
 label = %output:0:150%
+click-left = playerctl play-pause spotify
+click-right = spotify
 
 ################################################################################
 
@@ -2352,6 +2370,7 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 exec = python -u ~/.config/polybar/scripts/weather.py
 tail = true
+click-left = xdg-open "https://yandex.ru/pogoda/details?lat=43.585525&lon=39.723062&via=ms#6"
 
 #################################################################################
 

@@ -8,7 +8,7 @@
 
 # Vivaldi
 super + F1
-	brave
+	firefox
 
 # Atom
 super + F2
@@ -36,7 +36,7 @@ super + F7
 
 #Thunar
 super + F8
-    thunar
+    nemo
 
 #Evolution
 super + F9
@@ -62,6 +62,10 @@ super + F12
 super + e
     subl
 
+#Brave
+super + b
+    brave
+
 #Browser
 super + w
     vivaldi-stable
@@ -80,7 +84,7 @@ super + x
 
 #Rofi theme selector
 super + r
-    rofi-theme-selector
+    ristretto
 
 #Urxvt
 super + t
@@ -177,9 +181,9 @@ ctrl + alt + i
 ctrl + alt + k
      arcolinux-logout
 
-#arcolinux-logout
+#arcolinux-lock
 ctrl + alt + l
-    arcolinux-logout
+    betterlockscreen -l dim 
 
 #Pamac-manager
 ctrl + alt + p
@@ -188,6 +192,10 @@ ctrl + alt + p
 #Xfce4-settings-manager
 ctrl + alt + m
      xfce4-settings-manager
+
+#Nemo
+ctrl + alt + n
+    nemo
 
 #Pulse Audio Control
 ctrl + alt + u
@@ -328,8 +336,8 @@ ctrl + shift + Print
 #################################################################
 
 #xfce4-terminal dropdown
-F12
-    xfce4-terminal --drop-down
+# F12
+#    xfce4-terminal --drop-down
 
 
 #################################################################
@@ -505,7 +513,7 @@ super + ctrl + {Left,Down,Up,Right}
 	bspc node --{focus} {west,south,north,east}
 
 # Contract tiled space
-super + ctrl + {h,j,k,l}
+super + ctrl + {u,i,o,p}
 	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
 
 # Focus parent/brother/first/second for preselection
@@ -513,7 +521,7 @@ super + ctrl + {e,r,t,y}
 	bspc node --focus @{parent,brother,first,second}
 
 # Preselect the splitting area for next window on leaf/parent
-super + ctrl + {u,i,o,p}
+super + ctrl + {h,j,k,l}
 	bspc node --presel-dir \~{west,south,north,east}
 
 # Define splitting ratio for next window on leaf/parent
