@@ -432,7 +432,7 @@ font-4 = "Weather Icons:antialias=true:size=10;2"
 
 modules-left = bspwm spotify1
 modules-center = openweathermap-simple date
-modules-right = xkeyboard pavolume cpu2 memory2 arch-updates
+modules-right = xkeyboard pavolume cpu2 memory2 arch-updates battery
 
 tray-detached = false
 tray-offset-x = 0
