@@ -62,5 +62,5 @@ run thunar --daemon &
 #run discord &
 #run spotify &
 #run atom &
-run blueberry &
+#run blueberry &
 

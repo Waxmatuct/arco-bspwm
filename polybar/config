@@ -432,7 +432,7 @@ font-4 = "Weather Icons:antialias=true:size=10;2"
 
 modules-left = bspwm spotify1
 modules-center = openweathermap-simple date
-modules-right = xkeyboard pavolume cpu2 memory2 arch-updates battery
+modules-right = xkeyboard pavolume cpu2 memory2 arch-updates battery backlight
 
 tray-detached = false
 tray-offset-x = 0
@@ -1478,7 +1478,7 @@ label-visible-padding = 2
 label-urgent = %icon% %name%
 label-urgent-background = ${self.label-focused-background}
 label-urgent-foreground = #db104e
-label-urgent-padding = 2
+label-urgent-paddibacklng = 2
 
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
