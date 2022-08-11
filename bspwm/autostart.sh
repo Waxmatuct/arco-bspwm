@@ -7,8 +7,6 @@ function run {
   fi
 }
 
-run nvidia-settings -l &
-
 #Find out your monitor name with xrandr or arandr (save and you get this line)
 #xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
 #xrandr --output DP2 --primary --mode 1920x1080 --rate 60.00 --output LVDS1 --off &
@@ -42,9 +40,10 @@ xsetroot -cursor_name left_ptr &
 run variety &
 run nm-applet &
 #run pamac-tray &
-run xfce4-power-manager &
+#run xfce4-power-manager &
 numlockx on &
 #blueberry-tray &
+blueman-applet &
 picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
@@ -60,3 +59,4 @@ run thunar --daemon &
 #run discord &
 #run spotify &
 #run atom &
+run nvidia-settings -l &

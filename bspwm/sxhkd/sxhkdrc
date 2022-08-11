@@ -60,7 +60,7 @@ super + F12
 
 #Atom
 super + e
-    subl
+    eog
 
 #Brave
 super + b
@@ -70,9 +70,9 @@ super + b
 super + w
     vivaldi-stable
 
-#Conky-toggle
+#Calculator
 super + c
-    conky-toggle
+    gnome-calculator
 
 #Htop
 #super + h
@@ -80,7 +80,7 @@ super + c
 
 #arcolinux-logout
 super + x
-    arcolinux-logout
+    archlinux-logout
 
 #Rofi theme selector
 super + r
@@ -261,12 +261,12 @@ alt + Right
     variety -n
 
 #Wallpaper toggle-pause
-alt + Up
-    variety --toggle-pause
+#alt + Up
+#    variety --toggle-pause
 
 #Wallpaper resume
-alt + Down
-    variety --resume
+#alt + Down
+#    variety --resume
 
 #Xfce appfinder
 alt + F2
@@ -346,11 +346,11 @@ ctrl + shift + Print
 
 #Raises volume
 XF86AudioRaiseVolume
-    amixer set Master 10%+
+    amixer set Master 5%+
 
 #Lowers volume
 XF86AudioLowerVolume
-    amixer set Master 10%-
+    amixer set Master 5%-
 
 #Mute
 XF86AudioMute

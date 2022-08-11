@@ -39,7 +39,7 @@ format-offset =
 
 [colors]
 ; Nord theme ============
-background = #2F343F
+background = #dd2c2c2c
 foreground = #f3f4f5
 alert = #d08770
 volume-min = #a3be8c
@@ -1510,14 +1510,14 @@ pin-workspaces = true
 ;ws-icon-default = " "
 
 ws-icon-0 = 1;[WEB]
-ws-icon-1 = 2;[DEV]
-ws-icon-2 = 3;[CHAT]
-ws-icon-3 = 4;[MEDIA]
-ws-icon-4 = 5;[VID]
-ws-icon-5 = 6;VI
-ws-icon-6 = 7;VII
-ws-icon-7 = 8;VIII
-ws-icon-8 = 9;IX
+ws-icon-1 = 2;[FILES]
+ws-icon-2 = 3;[CODE]
+ws-icon-3 = 4;[CHAT]
+ws-icon-4 = 5;[GRAPH]
+ws-icon-5 = 6;[VID]
+ws-icon-6 = 7;[MUS]
+ws-icon-7 = 8;[STEAM]
+ws-icon-8 = 9;[VBOX]
 ws-icon-9 = 10;X
 ws-icon-default = " "
 
