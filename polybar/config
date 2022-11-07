@@ -432,7 +432,7 @@ font-4 = "Weather Icons:antialias=true:size=10;2"
 
 modules-left = bspwm spotify1
 modules-center = openweathermap-simple date
-modules-right = xkeyboard pavolume cpu2 memory2 arch-updates
+modules-right = xkeyboard cpu2 memory2 arch-updates
 
 tray-detached = false
 tray-offset-x = 0
@@ -1516,7 +1516,7 @@ ws-icon-3 = 4;[CHAT]
 ws-icon-4 = 5;[GRAPH]
 ws-icon-5 = 6;[VID]
 ws-icon-6 = 7;[MUS]
-ws-icon-7 = 8;[STEAM]
+ws-icon-7 = 8;[OBS]
 ws-icon-8 = 9;[VBOX]
 ws-icon-9 = 10;X
 ws-icon-default = " "

@@ -183,7 +183,7 @@ colors:
   # Default colors
   primary:
     #background: '#161e2d'
-    background: '#2c2c2c'
+    background: '#161e2d'
     foreground: '#CBCCC6'
 
   # Normal colors
