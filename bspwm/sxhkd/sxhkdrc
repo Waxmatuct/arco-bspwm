@@ -117,7 +117,7 @@ super + KP_Enter
 
 #File-Manager
 super + shift + Return
-	nemo
+	thunar
 
 #Keyboard dependent
 #File-Manager
@@ -344,17 +344,29 @@ F12
 #     MULTIMEDIA KEYS
 #################################################################
 
+# #Raises volume
+# XF86AudioRaiseVolume
+#     amixer set Master 5%+
+
+# #Lowers volume
+# XF86AudioLowerVolume
+#     amixer set Master 5%-
+
 #Raises volume
-XF86AudioRaiseVolume
+ctrl  + alt + shift + equal
     amixer set Master 5%+
 
-#Lowers volume
-XF86AudioLowerVolume
+#Lowers volume  
+ctrl  + alt + shift + minus
     amixer set Master 5%-
 
 #Mute
-XF86AudioMute
+ctrl  + alt + shift + 0
     amixer -D pulse set Master 1+ toggle
+    
+# #Mute
+# XF86AudioMute
+#     amixer -D pulse set Master 1+ toggle
 
 #Playerctl works for Pragha, Spotify and others
 #Delete the line for playerctl if you want to use mpc
