@@ -9,7 +9,7 @@ function run {
 
 #Find out your monitor name with xrandr or arandr (save and you get this line)
 #xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
-xrandr --output DVI-D-0 --auto --output HDMI-0 --auto &
+xrandr --output Virtual1 --mode 1360x768 &
 #xrandr --output LVDS1 --mode 1366x768 --output DP3 --mode 1920x1080 --right-of LVDS1
 #xrandr --output HDMI-0 --auto
 #autorandr horizontal
