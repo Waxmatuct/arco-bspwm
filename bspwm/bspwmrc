@@ -96,6 +96,7 @@ bspc rule -a Thunar desktop='^2' follow=on
 #bspc rule -a Atom desktop='^2' follow=on
 bspc rule -a subl desktop='^3' follow=on
 bspc rule -a Code desktop='^3' follow=on
+bspc rule -a jetbrains-phpstorm desktop='^3' follow=on
 bspc rule -a TelegramDesktop desktop='^4' follow=on
 bspc rule -a gimp desktop='^5' follow=on
 bspc rule -a Inkscape desktop='^5' follow=on
