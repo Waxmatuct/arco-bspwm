@@ -88,7 +88,7 @@ bspc rule -a Gnome-disks state=tiled
 bspc rule -a Xfce4-settings-manager state=tiled
 
 #open applications on specific workspaces
-bspc rule -a firefox desktop='^1' follow=on
+bspc rule -a Firefox-esr desktop='^1' follow=on
 #bspc rule -a Google-chrome desktop='^1' follow=on
 #bspc rule -a Chromium desktop='^1'  follow=on
 bspc rule -a Nemo desktop='^2' follow=on
