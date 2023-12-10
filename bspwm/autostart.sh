@@ -25,7 +25,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
@@ -41,13 +41,13 @@ feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
 #run xfce4-power-manager &
 numlockx on &
 #blueberry-tray &
-blueman-applet &
+#blueman-applet &
 picom --config $HOME/.config/bspwm/picom.conf &
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
 #run nextcloud &
-#nitrogen --restore &
+nitrogen --restore &
 #run caffeine &
 #run vivaldi-stable &
 #run firefox &
