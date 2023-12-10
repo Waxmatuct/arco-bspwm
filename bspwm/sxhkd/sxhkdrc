@@ -100,7 +100,7 @@ super + m
 
 #urxvt
 super + Return
-    xfce4-terminal
+    alacritty
 
 #Xkill
 super + Escape
