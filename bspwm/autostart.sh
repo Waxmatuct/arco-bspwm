@@ -32,7 +32,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 #dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 #xsetroot -cursor_name left_ptr &
 
-conky -c $HOME/.config/conky/Asterope/start.sh &
+conky -c $HOME/.config/bspwm/system-ovverview &
 #run variety &
 #run redshift-gtk &
 #run nvidia-settings -l &
