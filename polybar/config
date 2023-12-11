@@ -393,7 +393,7 @@ height = 28
 offset-x = 0
 offset-y = 0
 radius = 0
-fixed-center = false
+fixed-center = true
 bottom = false
 ;separator = |
 
@@ -430,9 +430,9 @@ font-2 = "SF Mono:weight=semibold:size=10;1"
 font-3 = "Noto Sans Mono:size=10;0"
 font-4 = "Weather Icons:antialias=true:size=10;2"
 
-modules-left = bspwm spotify1
+modules-left = bspwm xwindow
 modules-center = openweathermap-simple date
-modules-right = xkeyboard cpu2 memory2 arch-updates
+modules-right = xkeyboard cpu2 memory2 arch-updates pulseaudio
 
 tray-detached = false
 tray-offset-x = 0
@@ -2495,7 +2495,7 @@ label-indicator-underline = ${colors.foreground}
 [module/xwindow]
 ;https://github.com/jaagr/polybar/wiki/Module:-xwindow
 type = internal/xwindow
-
+; format-padding = 4
 ; Available tokens:
 ;   %title%
 ; Default: %title%
@@ -2506,3 +2506,28 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 ###############################################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
+
+format-volume = <label-volume>
+format-volume-prefix = ""
+format-volume-prefix-padding = 3pt
+format-volume-foreground = ${colors.foreground}
+format-volume-background = ${colors.background}
+
+label-volume = "%percentage%"
+label-volume-foreground = ${colors.foreground}
+
+format-muted = <label-muted>
+format-muted-prefix = ""
+format-muted-prefix-padding = 3pt
+format-muted-foreground = ${colors.foreground}
+format-muted-background = ${colors.background}
+label-muted = "Muted"
+label-muted-foreground = ${colors.foreground}
+
+;click-right = OpenApps --soundcontrol
+
