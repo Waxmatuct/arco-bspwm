@@ -791,7 +791,7 @@ interval = 1000
 label = %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  UPD"
+format-prefix = "  UPD "
 format-prefix-foreground = ${colors.prefix}
 format-underline = #FFBB00
 
