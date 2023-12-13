@@ -41,6 +41,7 @@ format-offset =
 ; Nord theme ============
 background = #dd2c2c2c
 foreground = #f3f4f5
+prefix = #ffe033
 alert = #d08770
 volume-min = #a3be8c
 volume-med = #ebcb8b
@@ -120,7 +121,7 @@ font-4 = "Weather Icons:antialias=true:size=10;2"
 
 modules-left = bspwm spotify1
 modules-center = openweathermap-simple date
-modules-right = xkeyboard cpu2 memory2 updates
+modules-right = xkeyboard cpu2 memory2 pulseaudio updates
 
 tray-detached = false
 tray-offset-x = 0
@@ -434,8 +435,8 @@ type = internal/cpu
 interval = 1
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-;format-prefix = " "
-;format-prefix-foreground = #cd1f3f
+format-prefix = " CPU "
+format-prefix-foreground = ${colors.prefix}
 format-underline = #cd1f3f
 
 label-font = 3
@@ -453,7 +454,7 @@ format-padding = 0
 ;   %percentage% (default) - total cpu load
 ;   %percentage-cores% - load percentage for each core
 ;   %percentage-core[1-9]% - load percentage for specific core
-label = CPU:%percentage:2%%
+label = %percentage:1%%
 
 ################################################################################
 
@@ -677,9 +678,9 @@ interval = 1
 ;   %mb_total%
 label = %percentage_used%%
 
-format = RAM: <label>
-;format-prefix = "  "
-format-prefix-foreground = #3384d0
+format = <label>
+format-prefix = " RAM "
+format-prefix-foreground = ${colors.prefix}
 format-underline = #3384d0
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
@@ -787,11 +788,11 @@ type = custom/script
 ;exec = pacman -Qu | wc -l
 exec = nala list --upgradable | grep upgradable | wc -l
 interval = 1000
-label = UPD: %output%
+label = %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-;format-prefix = "  "
-;format-prefix-foreground = #FFBB00
+format-prefix = "  UPD"
+format-prefix-foreground = ${colors.prefix}
 format-underline = #FFBB00
 
 ################################################################################
@@ -1160,7 +1161,7 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
+format-prefix-foreground = ${colors.prefix}
 format-prefix-background = ${colors.background}
 format-prefix-underline = #3ecfb2
 format-foreground = ${colors.foreground}
@@ -1189,3 +1190,29 @@ format-foreground = ${colors.foreground}
 format-background = ${colors.background}
 
 ###############################################################################
+
+[module/pulseaudio]
+type = internal/pulseaudio
+use-ui-max = true
+interval = 5
+
+format-volume = <label-volume>
+format-volume-prefix = " VOL"
+format-volume-prefix-padding = 3pt
+format-volume-prefix-foreground = ${colors.prefix}
+format-volume-foreground = ${colors.foreground}
+format-volume-background = ${colors.background}
+
+label-volume = "%percentage%"
+label-volume-foreground = ${colors.foreground}
+
+format-muted = <label-muted>
+format-muted-prefix = ""
+format-muted-prefix-padding = 3pt
+format-muted-foreground = ${colors.foreground}
+format-muted-background = ${colors.background}
+label-muted = "Muted"
+label-muted-foreground = "#ff0000"
+
+;click-right = OpenApps --soundcontrol
+
