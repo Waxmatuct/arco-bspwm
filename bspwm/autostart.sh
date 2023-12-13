@@ -21,20 +21,13 @@ $HOME/.config/polybar/launch.sh &
 
 keybLayout=$(setxkbmap -v | awk -F "+" '/symbols/ {print $2}')
 
-if [ $keybLayout = "be" ]; then
-  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc-azerty &
-else
-  run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
-fi
+run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 
 #Some ways to set your wallpaper besides variety or nitrogen
-#feh --bg-scale ~/.config/bspwm/wall.png &
 feh --bg-fill /usr/share/backgrounds/archlinux-login-backgrounds/att-03.jpg &
-#feh --randomize --bg-fill ~/Képek/*
-#feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 
-dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
-xsetroot -cursor_name left_ptr &
+#dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
+#xsetroot -cursor_name left_ptr &
 
 conky -c $HOME/.config/bspwm/system-overview &
 run variety &
@@ -56,6 +49,7 @@ run nextcloud &
 #run vivaldi-stable &
 #run firefox &
 run thunar --daemon &
+run xfce4-clipman &
 #run dropbox &
 #run insync start &
 #run discord &
