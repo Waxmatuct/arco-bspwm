@@ -120,7 +120,7 @@ font-4 = "Weather Icons:antialias=true:size=10;2"
 
 modules-left = bspwm spotify1
 modules-center = openweathermap-simple date
-modules-right = xkeyboard cpu2 memory2 update
+modules-right = xkeyboard cpu2 memory2 updates
 
 tray-detached = false
 tray-offset-x = 0
@@ -790,8 +790,8 @@ interval = 1000
 label = UPD: %output%
 format-foreground = ${colors.foreground}
 format-background = ${colors.background}
-format-prefix = "  "
-format-prefix-foreground = #FFBB00
+;format-prefix = "  "
+;format-prefix-foreground = #FFBB00
 format-underline = #FFBB00
 
 ################################################################################
