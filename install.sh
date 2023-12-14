@@ -50,3 +50,11 @@ chmod +x install.sh
 cd ~/Downloads && git clone https://github.com/vinceliuice/Colloid-icon-theme.git && cd Colloid-icon-theme
 chmod +x install.sh
 ./install.sh -s nord
+
+### Packages
+sudo apt install -y gnome-disk-utility evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect
+
+flatpak install flathub org.mozilla.firefox
+flatpak install flathub ru.yandex.Browser
+flatpak install flathub org.telegram.desktop
+flatpak install flathub com.vscodium.codium
