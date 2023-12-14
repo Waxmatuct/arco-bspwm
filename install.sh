@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ln -s ~/Downloads/bspwm/alacritty ~/.config/alacritty
 ln -s ~/Downloads/bspwm/bspwm ~/.config/bspwm
 ln -s ~/Downloads/bspwm/polybar ~/.config/polybar
 
@@ -53,8 +54,3 @@ chmod +x install.sh
 
 ### Packages
 sudo apt install -y gnome-disk-utility evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect
-
-flatpak install flathub org.mozilla.firefox
-flatpak install flathub ru.yandex.Browser
-flatpak install flathub org.telegram.desktop
-flatpak install flathub com.vscodium.codium

@@ -33,7 +33,6 @@ fc-cache
 cd ~/Pictures && git clone https://github.com/linuxdotexe/nordic-wallpapers
 sudo apt install -y arc-theme
 sudo apt install -y nitrogen
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ### 3. Install betterlockscreen
@@ -79,4 +78,11 @@ flatpak install flathub com.obsproject.Studio
 
 ```
 sudo apt install -y evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect
+```
+
+### 8. Oh-my-zsh
+
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~/Downloads/bspwm && cat aliases >> ~/.zshrc
 ```
