@@ -12,11 +12,11 @@ super + F1
 
 # micro
 super + F2
-	geany
+	thunar
 
 #geany
 super + F3
-    geany
+    flatpak run com.vscodium.codium
 
 #Gimp
 # super + F4
@@ -51,7 +51,7 @@ super + F3
 #     rofi -theme-str 'window \{width: 100%;height: 100%;\}' -show drun
 
 Rofi
-super + F12
+super + space
     ~/.config/rofi/launchers/type-5/launcher.sh
 
 #################################################################

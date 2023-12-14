@@ -44,4 +44,5 @@ run volumeicon &
 #run nextcloud &
 nitrogen --restore &
 run thunar --daemon &
+run xfce4-clipman &
 
