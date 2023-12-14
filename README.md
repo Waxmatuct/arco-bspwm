@@ -43,7 +43,7 @@ sudo apt install -y autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libf
 cd ~/Downloads && git clone https://github.com/Raymo111/i3lock-color.git && cd i3lock-color
 ./install-i3lock-color.sh
 wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/install.sh -O - -q | sudo bash -s system
-betterlockscreen -u "path/to/dir"
+betterlockscreen -u "~/Pictures/nordic-wallpapers/wallpapers/"
 ```
 
 ### 4. Rofi
