@@ -4,7 +4,7 @@
 
 ```
 cd ~/Downloads
-git clone https://github.com/Waxmatuct/arco-bspwm.git ./bspwm
+git clone https://github.com/Waxmatuct/arco-bspwm.git ./bspwm && cd bspwm
 git checkout debian12
 ```
 

@@ -37,7 +37,3 @@ cd ~/Downloads && git clone --depth=1 https://github.com/adi1090x/rofi.git && cd
 chmod +x setup.sh
 ./setup.sh
 
-### Pacstall - AUR for Ubuntu/Debian
-sudo bash -c "$(wget -q https://pacstall.dev/q/install -O -)"
-pacstall -I alacritty
-
