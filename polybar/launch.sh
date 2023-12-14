@@ -34,6 +34,6 @@ case $desktop in
     # else
     # polybar --reload mainbar-bspwm-extra -c ~/.config/polybar/config &
     # fi
-    ;;
+    ;
 
 esac

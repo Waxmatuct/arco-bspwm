@@ -50,27 +50,23 @@ bspc monitor -d 1 2 3 4 5 6 7 8 9
 #bspc monitor HDMI2 -d 6 7 8 9 10
 
 #Fullscreen applications
-bspc rule -a inkscape state=fullscreen
-bspc rule -a Spotify state=fullscreen
-bspc rule -a Vlc state=fullscreen
-bspc rule -a VirtualBox Manager state=fullscreen
-bspc rule -a VirtualBox Machine state=fullscreen
+#bspc rule -a inkscape state=fullscreen
+#bspc rule -a Vlc state=fullscreen
+#bspc rule -a VirtualBox Manager state=fullscreen
+#bspc rule -a VirtualBox Machine state=fullscreen
 #bspc rule -a Gimp state=fullscreen
 
 #Floating applications
 bspc rule -a Arandr state=floating
-bspc rule -a Arcolinux-tweak-tool.py state=floating
-bspc rule -a Arcolinux-welcome-app.py state=floating
-bspc rule -a Arcolinux-calamares-tool.py state=floating
 bspc rule -a feh state=floating
 #bspc rule -a nextcloud state=floating
 #bspc rule -a mpv state=floating sticky=on
 #bspc rule -a Font-manager state=floating
 bspc rule -a Gnome-calculator state=floating
 #bspc rule -a Gpick state=floating sticky=on
-#bspc rule -a Nitrogen state=floating
+bspc rule -a Nitrogen state=floating
 bspc rule -a Oblogout state=floating
-#bspc rule -a Pavucontrol state=floating sticky=on
+bspc rule -a Pavucontrol state=floating sticky=on
 #bspc rule -a Peek state=floating
 #bspc rule -a rofi state=floating sticky=on
 #bspc rule -a Skype state=floating
