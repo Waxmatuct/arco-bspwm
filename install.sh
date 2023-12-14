@@ -20,6 +20,8 @@ fc-cache -fv
 sudo apt install -y arc-theme
 sudo apt install -y nitrogen
 sudo apt install -y zsh
+sudo apt install -y bibata-cursor-theme
+sudo apt install -y conky-all
 
 ### Install betterlockscreen
 sudo apt install -y autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util0-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y
@@ -34,3 +36,17 @@ cd ~/Downloads && git clone --depth=1 https://github.com/adi1090x/rofi.git && cd
 chmod +x setup.sh
 ./setup.sh
 
+### grub2-theme
+cd ~/Downloads && git clone https://github.com/vinceliuice/grub2-themes.git && cd grub2-themes 
+chmod +x install.sh
+./install.sh -t stylish
+
+### Colloid-gtk-theme
+cd ~/Downloads && git clone https://github.com/vinceliuice/Colloid-gtk-theme.git && cd Colloid-gtk-theme
+chmod +x install.sh
+./install.sh --tweaks nord
+
+### Colloid-icons
+cd ~/Downloads && git clone https://github.com/vinceliuice/Colloid-icon-theme.git && cd Colloid-icon-theme
+chmod +x install.sh
+./install.sh -s nord
