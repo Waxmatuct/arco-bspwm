@@ -1,14 +1,18 @@
 # arco-bspwm
 
-### 1. Install bspwm
+## Install bspwm with fonts, themes, rofi and betterlockscreen through script
 
 ```
 cd ~/Downloads
 git clone https://github.com/Waxmatuct/arco-bspwm.git ./bspwm && cd bspwm
 git checkout debian12
+chmod +x install.sh
+./install.sh
 ```
 
-### 2. Install fonts
+# or manually
+
+### 1. Install fonts
 
 ```
 mkdir ~/Downloads/fonts && cd ~/Downloads/fonts
@@ -23,7 +27,7 @@ sudo apt install -y fonts-font-awesome
 fc-cache
 ```
 
-### 3. Install themes and wallpapers
+### 2. Install themes and wallpapers
 
 ```
 cd ~/Pictures && git clone https://github.com/linuxdotexe/nordic-wallpapers
@@ -32,7 +36,7 @@ sudo apt install -y nitrogen
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
-### 4. Install betterlockscreen
+### 3. Install betterlockscreen
 
 ```
 sudo apt install -y autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util0-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev -y
@@ -42,7 +46,7 @@ wget https://raw.githubusercontent.com/betterlockscreen/betterlockscreen/main/in
 betterlockscreen -u "path/to/dir"
 ```
 
-### 5. Rofi
+### 4. Rofi
 
 ```
 sudo apt install -y rofi
@@ -52,14 +56,14 @@ chmod +x setup.sh
 micro ~/.config/rofi/launchers/type-5/launcher.sh
 ```
 
-### 6. Pacstall - AUR for Ubuntu/Debian
+### 5. Pacstall - AUR for Ubuntu/Debian
 
 ```
 sudo bash -c "$(wget -q https://pacstall.dev/q/install -O -)"
 pacstall -I alacritty
 ```
 
-### 7. Flatpaks
+### 6. Flatpaks
 
 ```
 sudo apt remove -y firefox-esr
@@ -71,7 +75,7 @@ flatpak install flathub com.jetbrains.PhpStorm
 flatpak install flathub com.obsproject.Studio
 ```
 
-### 8. Additional packages
+### 7. Additional packages
 
 ```
 sudo apt install -y evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect

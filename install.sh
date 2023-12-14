@@ -1,8 +1,8 @@
 #!/bin/bash
 
-ln -s ./alacritty/ ~/.config/alacritty
-ln -s ./bspwm ~/.config/bspwm
-ln -s ./polybar ~/.config/polybar
+ln -s ~/Downloads/bspwm/alacritty/ ~/.config/alacritty
+ln -s ~/Downloads/bspwm/bspwm ~/.config/bspwm
+ln -s ~/Downloads/bspwm/polybar ~/.config/polybar
 
 sudo apt update && sudo apt upgrade -y
 
