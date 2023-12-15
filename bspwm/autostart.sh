@@ -10,7 +10,7 @@ function run {
 #Find out your monitor name with xrandr or arandr (save and you get this line)
 #xrandr --output VGA-1 --primary --mode 1360x768 --pos 0x0 --rotate normal
 xrandr --output Virtual1 --mode 1360x768 &
-#xrandr --output DVI-D-0 --auto --output HDMI-0 --auto &
+xrandr --output DVI-D-0 --auto --output HDMI-0 --auto &
 #autorandr horizontal
 
 $HOME/.config/polybar/launch.sh &
