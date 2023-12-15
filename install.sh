@@ -3,7 +3,7 @@
 ln -s ~/Downloads/bspwm/alacritty ~/.config/alacritty
 ln -s ~/Downloads/bspwm/bspwm ~/.config/bspwm
 ln -s ~/Downloads/bspwm/polybar ~/.config/polybar
-chmod +x ~/Downloads/bspwm/polybar/scripts/*.sh
+# chmod +x ~/Downloads/bspwm/polybar/scripts/*.sh
 
 sudo apt update && sudo apt upgrade -y
 
@@ -15,7 +15,6 @@ sudo cp -R SF-Mono-Font /usr/local/share/fonts/
 git clone https://github.com/sahibjotsaggu/San-Francisco-Pro-Fonts.git
 sudo cp -R San-Francisco-Pro-Fonts /usr/local/share/fonts/San-Francisco-Pro-Fonts/
 sudo cp weather-icons/font/weathericons-regular-webfont.ttf /usr/local/share/fonts/
-sudo apt install -y fonts-font-awesome
 fc-cache -fv
 
 ### Install theme and wallpaper
