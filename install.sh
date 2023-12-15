@@ -3,6 +3,7 @@
 ln -s ~/Downloads/bspwm/alacritty ~/.config/alacritty
 ln -s ~/Downloads/bspwm/bspwm ~/.config/bspwm
 ln -s ~/Downloads/bspwm/polybar ~/.config/polybar
+chmod +x ~/Downloads/bspwm/polybar/scripts/*.sh
 
 sudo apt update && sudo apt upgrade -y
 
@@ -53,4 +54,4 @@ chmod +x install.sh
 ./install.sh -s nord
 
 ### Packages
-sudo apt install -y gnome-disk-utility evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect
+sudo apt install -y gnome-disk-utility evince kodi kodi-pvr-iptvsimple kodi-inputstream-ffmpegdirect pulseaudio-equalizer neovim ristretto nextcloud-desktop cherrytree vlc synaptic snap telegram-desktop

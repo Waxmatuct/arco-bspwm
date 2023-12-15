@@ -28,7 +28,7 @@ run sxhkd -c ~/.config/bspwm/sxhkd/sxhkdrc &
 #dex $HOME/.config/autostart/arcolinux-welcome-app.desktop
 #xsetroot -cursor_name left_ptr &
 
-conky -c $HOME/.config/bspwm/system-overview &
+#conky -c $HOME/.config/bspwm/system-overview &
 #run variety &
 #run redshift-gtk &
 #run nvidia-settings -l &
@@ -40,7 +40,7 @@ picom --config $HOME/.config/bspwm/picom.conf &
 #/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 /usr/lib/xfce4/notifyd/xfce4-notifyd &
 run volumeicon &
-#run nextcloud &
+run nextcloud &
 nitrogen --restore &
 run thunar --daemon &
 run xfce4-clipman &
