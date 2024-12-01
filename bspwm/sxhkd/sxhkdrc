@@ -1,4 +1,4 @@
-#################################################################
+################################################################
 # KEYBOARD BINDINGS FOR ANY TWM
 #################################################################
 
@@ -8,7 +8,7 @@
 
 # Firefox
 super + F1
-	firefox-esr
+	yandex-browser
 
 # micro
 super + F2
@@ -16,19 +16,19 @@ super + F2
 
 #geany
 super + F3
-    flatpak run com.vscodium.codium
+    code
 
 #Gimp
-# super + F4
-#     gimp
+super + F4
+    telegram-desktop
 
-#Meld
-# super + F5
-#     meld
+Meld
+super + F5
+    gimp
 
 #Vlc
-# super + F6
-#     vlc --video-on-top
+super + F6
+    vlc
 
 #Virtualbox
 # super + F7
@@ -46,9 +46,9 @@ super + F3
 # super + F10
 #     spotify
 
-#Rofi Fullscreen
-# super + F11
-#     rofi -theme-str 'window \{width: 100%;height: 100%;\}' -show drun
+Rofi Fullscreen
+super + F11
+    ~/.config/rofi/launchers/type-6/launcher.sh
 
 Rofi
 super + F12
@@ -96,7 +96,7 @@ super + v
 
 #Pragha
 super + m
-    pragha
+    amixer -D pulse sset Capture toggle
 
 #urxvt
 super + Return
@@ -170,8 +170,8 @@ super + shift + s
 #     chromium -no-default-browser-check
 
 #Firefox
-# ctrl + alt + f
-#      firefox
+ctrl + alt + f
+      firefox-dev
 
 #Nitrogen
 # ctrl + alt + i
@@ -261,12 +261,12 @@ alt + Right
     variety -n
 
 #Wallpaper toggle-pause
-alt + Up
-   variety --toggle-pause
+#alt + Up
+#   variety --toggle-pause
 
 #Wallpaper resume
-alt + Down
-   variety --resume
+#alt + Down
+#   variety --resume
 
 #Xfce appfinder
 # alt + F2
